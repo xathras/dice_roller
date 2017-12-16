@@ -29,3 +29,7 @@ get '/generate-stats' do
   end.sort.reverse.take(6)
   json data: { output: roll_list }
 end
+
+get '/combat-manager' do
+  erb :combat_manager, layout: :layout
+end
